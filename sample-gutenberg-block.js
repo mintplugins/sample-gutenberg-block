@@ -8,11 +8,11 @@ registerBlockType( 'mynamespace/mycustomblock', {
 
 	edit() {
 
-		return ( 'This text is from My Cusom Block'	);
+		return ( 'This text is from My Custom Block' );
 
 	},
 	save() {
-		return ( 'This text is from My Cusom Block'	);
+		return ( 'This text is from My Custom Block' );
 	},
 
 } );
