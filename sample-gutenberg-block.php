@@ -22,6 +22,10 @@ function my_block_editor_scripts(){
 		'wp-editor'
 	);
 
+	// Add Babel File
+	wp_enqueue_script( 'babel', 'https://unpkg.com/babel-standalone@6/babel.min.js', $required_scripts );
+	$required_scripts[] = 'babel';
+
 	// Gutenberg Block JSX code
 	wp_register_script( 'my-custom-script', plugin_dir_url( __FILE__ ) . 'sample-gutenberg-block.js', $required_scripts, time() );
 
